@@ -4,11 +4,11 @@ The **Boardoza BNO055 Breakout Board** is an advanced **9-axis absolute orientat
 
 This module operates with **3.3V or 5V**, ensuring compatibility with a wide range of microcontrollers. By default, it communicates via **I<sup>2</sup>C**, but can be configured to **UART mode** using the **PS0 and PS1 pins**. The **PS0, PS1, INT, and ADR pins operate at 3.3V**, facilitating seamless interfacing with low-power MCUs.
 
-### [Click here to purchase!](https://www.ozdisan.com/maker-ve-iot-urunleri/boardoza/boardoza-modulleri/BOARDOZA-BNO055/1206508)
+## [Click here to purchase!](https://www.ozdisan.com/maker-ve-iot-urunleri/boardoza/boardoza-modulleri/BOARDOZA-BNO055/1206508)
 
 | Front Side | Back Side |
 |:---:|:---:|
-| ![Front](.) | ![Back](.) |
+| ![Front](./assets/BNO055%20Front.png) | ![Back](./assets/BNO055%20Back.png) |
 
 ---
 
