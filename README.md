@@ -31,8 +31,11 @@ This module operates with **3.3V or 5V**, ensuring compatibility with a wide ran
 **Functions:** 9-Axis IMU sensor (3-axis accelerometer, 3-axis gyroscope, 3-axis magnetometer, temperature sensor)  
 **Gyroscope Range:** ±2000 degrees per second  
 **Accelerometer Resolution:** 14-bit  
+**Magnetic Field Range:** ±1300μT (X/Y-axis), ±2500μT (Z-axis)  
 **Operating Temperature:** -40°C ~ +85°C  
 **Board Dimensions:** 20mm x 40mm
+
+> Note: Magnetic field values are given in microtesla (μT), where 1 μT = 10⁻⁶ tesla.
 
 ---
 
@@ -58,12 +61,17 @@ This module operates with **3.3V or 5V**, ensuring compatibility with a wide ran
 | 5 | PS1 (I) | Protocol select pin 1 |
 | 6 | PS0 (I) | Protocol select pin 0 |
 
-**Note:** To switch between I<sup>2</sup>C and UART modes, configure the **PS0** and **PS1** pins as follows:
+### **Protocol Selection Table (PS1 / PS0)**
 
-- **I<sup>2</sup>C Mode (default):** PS0 = 0 (GND), PS1 = 0 (GND)
-- **UART Mode:** PS0 = 1 (VDDIO), PS1 = 0 (GND)
+| PS1 | PS0 | Functionality             |
+|:---:|:---:|---------------------------|
+| 0   | 0   | Standard/Fast I<sup>2</sup>C Interface |
+| 0   | 1   | HID over I<sup>2</sup>C              |
+| 1   | 0   | UART Interface              |
+| 1   | 1   | Reserved                    |
 
-For detailed information on protocol selection and pin configurations, refer to the [BNO055 Datasheet](./assets/BNO055%20Datasheet.pdf).
+> For detailed configuration, see the [BNO055 Datasheet](./assets/BNO055%20Datasheet.pdf)
+
 
 ---
 
